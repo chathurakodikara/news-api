@@ -18,6 +18,8 @@ use Illuminate\Support\Facades\Route;
 /**  any user can access the api */
 
 Route::get('/news', [NewsController::class, 'index']);
+Route::get('/news/{news}', [NewsController::class, 'show']);
+
 
 
 /** only log in User can access */
