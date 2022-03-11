@@ -38,8 +38,7 @@ The application imports news from many source and store in the own DB. That data
 * Migrate database 
 
 ```shell
-:~# php artisan migrate
-:~# php artisan db:seed
+:~# php artisan migrate:fresh --seed
 ```
 
 
