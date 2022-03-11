@@ -1,8 +1,5 @@
 ## About App
-
-Everyone has a Facebook account so you know it is imposible to track what we posted. the app provided the 100 photos that you posted of Facebook. You can choose the best 9 photos and add to your own photo collection
-
-The application configured as multitenant application. User only show their photos. I have use Multitenantable traits in the Photo model 
+The application imports news from many source and store in the own DB. That data can be access as APIs and views
 
 
 
@@ -39,10 +36,10 @@ The application configured as multitenant application. User only show their phot
 :~# npm install && npm run dev
 ```
 * Migrate database 
-* I have provided faker for User and Image model. php artisan db:seed will insert the data
 
 ```shell
-:~# php artisan migrate --seed
+:~# php artisan migrate
+:~# php artisan db:seed
 ```
 
 
@@ -57,10 +54,15 @@ The application configured as multitenant application. User only show their phot
 :~# NEWS_API_KEY=
 ```
 #### Step 3
-its time run the application and enjoy
+-its time run the application and enjoy
 ```shell
 :~# php artisan serve
 ```
+
+#### Login Information
+username: admin@gmail.com
+password: admin123
+
 
 ### Feel free to reach out to me.
 - email: chathura321@gmail.com 
