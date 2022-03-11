@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use App\Models\User;
 use Illuminate\Support\Str;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Schema;
 
 class UserSeeder extends Seeder
 {
@@ -15,7 +16,9 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
+        Schema::disableForeignKeyConstraints();
         User::truncate();
+        Schema::enableForeignKeyConstraints();
         User::create([
             'name' => 'Chathura',
             'email' => 'admin@gmail.com',
