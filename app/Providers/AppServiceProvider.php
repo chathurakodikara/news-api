@@ -32,7 +32,7 @@ class AppServiceProvider extends ServiceProvider
          */
         Http::macro('newsapiV2', function () {
             return Http::withHeaders([
-                'x-api-key' => '9055c7cb898f45b983fe45abe134b5f9',
+                'x-api-key' => env('NEWS_API_KEY'),
             ])->baseUrl('https://newsapi.org/v2/');
         });
 
